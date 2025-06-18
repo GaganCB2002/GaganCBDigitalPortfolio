@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Me</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* Add these lines for the background image */
+            background-image: url('img/bg.jpg'); /* Replace with the actual path to your image */
+            background-size: cover; /* Ensures the image covers the entire background */
+            background-repeat: no-repeat; /* Prevents the image from repeating */
+            background-attachment: fixed; /* Keeps the background fixed when scrolling */
+            background-position: center center; /* Centers the background image */
+            margin: 0; /* Remove default body margin */
+            padding: 0; /* Remove default body padding */
+        }
+        #intro {
+            display: none; /* Initially hidden */
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #edeae5;
+            /* Add some transparency or adjust color if needed for readability over image */
+            background-color: rgba(233, 229, 223, 0.8); /* Example: 80% opaque */
+            color: rgb(11, 11, 11); /* Make text readable on the background */
+        }
+        /* Style for the "Hire Me" link */
+        .art-link {
+            display: inline-block;
+            margin-top: 20px;
+            margin-left: 20px;
+            padding: 10px 15px;
+            background-color: #007bff; /* Example button color */
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .art-link:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        function showIntro() {
+            document.getElementById("intro").style.display = "block";
+        }
+    </script>
+</head>
+<body>
+
+    <a href="#" class="art-link art-white-link art-w-chevron" onclick="showIntro()">Hire Me</a>
+    <a href="index.html" class="art-link art-white-link art-w-chevron" onclick="showIntro()">Back to Home Page</a>
+
+    <div id="intro">
+        <h2>About Me</h2>
+        <p>Hello, my name is Gagan, and I am an aspiring software engineer with a strong foundation in Java programming, web development, and database management. I am passionate about backend technologies and actively refining my skills to solve complex coding challenges efficiently. Through hands-on projects and continuous learning, I have developed expertise in Java, MySQL, PostgreSQL, and strategic problem-solving. I am eager to apply my technical knowledge in real-world scenarios and contribute to innovative software solutions. As I explore career opportunities, I am keen on collaborating with like-minded professionals and growing in a dynamic tech environment.</p>
+    </div>
+
+</body>
+</html>
